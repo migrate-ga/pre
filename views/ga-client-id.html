@@ -1,5 +1,5 @@
 <!doctype html>
-
+<!-- this page is not intended for direct viewing and is intentionally left blank -->
 <html>
   <head>
     
@@ -10,14 +10,14 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-35608136-3', 'lmn-pre.glitch.me');
+    ga('create', 'UA-35608136-3', 'migrate-ga-pre.glitch.me');
     ga(function (tracker) {
       // Send ga clientId to parent window if included by new lmn page
       var data = {
         type: "ga-clientId",
         clientId: tracker.get('clientId'),
       }
-      window.parent.postMessage(data, 'https://lmn-post.glitch.me')
+      window.parent.postMessage(data, 'https://migrate-ga-post.glitch.me')
     });
   </script>
   </head>

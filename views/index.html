@@ -28,14 +28,13 @@
   ga('send', 'pageview');
 
 </script>
-    
-    
-    <link rel="stylesheet" href="/style.css">
   </head>
-
-  <h1>
-    LMN GA cookie migration test domain -- PRE migration site
-  </h1>
-
+<body>
+  GA client ID: <span id=myid></span>
+<script>
+  ga(function (tracker) {
+    document.getElementById('myid').textContent = tracker.get('clientId');
+  });
+  </script>
   </body>
 </html>
